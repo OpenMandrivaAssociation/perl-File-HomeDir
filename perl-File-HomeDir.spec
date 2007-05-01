@@ -1,6 +1,6 @@
 %define	module	File-HomeDir
 %define	name	perl-%{module}
-%define	version	0.58
+%define	version	0.64
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -21,7 +21,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}
 A Perl module to get home directory portably for self or other users.
 
 %prep
-%setup -n %{module}-%{version}
+%setup -q -n %{module}-%{version}
 find lib -name *.pm | xargs chmod 644 
 chmod 644 Changes
 
