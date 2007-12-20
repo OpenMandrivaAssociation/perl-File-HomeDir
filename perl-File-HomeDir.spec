@@ -15,6 +15,7 @@ Source:		http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 %endif
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 A Perl module to get home directory portably for self or other users.
