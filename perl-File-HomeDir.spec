@@ -1,6 +1,6 @@
 %define	module	File-HomeDir
 %define	name	perl-%{module}
-%define	version	0.82
+%define	version	0.84
 %define	release	%mkrel 1
 
 Name:		%{name}
