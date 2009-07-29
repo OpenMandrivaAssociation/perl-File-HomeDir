@@ -1,27 +1,27 @@
-%define	module	File-HomeDir
-%define	name	perl-%{module}
-%define	version	0.86
-%define	release	%mkrel 1
+%define	upstream_name	 File-HomeDir
+%define	upstream_version 0.86
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Get home directory for self or other users
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source:		http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 A Perl module to get home directory portably for self or other users.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 find lib -name *.pm | xargs chmod 644 
 chmod 644 Changes
 
@@ -44,4 +44,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/File
 %{_mandir}/*/*
-
