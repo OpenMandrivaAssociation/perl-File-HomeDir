@@ -33,6 +33,8 @@ chmod 644 Changes
 %make
 
 %check
+# create user dirs if needed
+xdg-user-dirs-update
 %make test
 
 %install
