@@ -15,6 +15,7 @@ Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_
 BuildRequires:	perl-devel
 %endif
 BuildRequires: perl(File::Which)
+BuildRequires: xdg-user-dirs
 
 Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
