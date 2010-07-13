@@ -14,6 +14,8 @@ Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
+BuildRequires: perl(File::Which)
+
 Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
@@ -30,7 +32,7 @@ chmod 644 Changes
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
