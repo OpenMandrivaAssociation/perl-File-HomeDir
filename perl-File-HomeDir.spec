@@ -1,5 +1,5 @@
 %define	upstream_name	 File-HomeDir
-%define upstream_version 0.93
+%define upstream_version 0.95
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
