@@ -1,9 +1,9 @@
 %define	upstream_name	 File-HomeDir
-%define upstream_version 0.97
+%define upstream_version 0.98
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Get home directory for self or other users
 License:	GPL+ or Artistic
