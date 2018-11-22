@@ -1,13 +1,13 @@
 %define	modname	File-HomeDir
-%define modver 1.002
+%define modver 1.004
 
 Summary:	Get home directory for self or other users
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		http://metacpan.org/pod/File::HomeDir
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RE/REHSACK/File-HomeDir-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
