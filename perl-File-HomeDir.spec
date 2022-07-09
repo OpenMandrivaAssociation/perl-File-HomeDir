@@ -1,5 +1,5 @@
 %define	modname	File-HomeDir
-%define modver 1.004
+%define modver 1.006
 
 Summary:	Get home directory for self or other users
 Name:		perl-%{modname}
