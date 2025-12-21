@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/File::HomeDir
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RE/REHSACK/File-HomeDir-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(File::Which)
 BuildRequires:	xdg-user-dirs
